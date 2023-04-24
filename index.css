@@ -1,0 +1,222 @@
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.multi-select-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.multi-select-menu {
+    position: absolute;
+    left: 0;
+    top: 2.1em;
+    float: left;
+    min-width: 99.5%;
+    background: #fff;
+    margin: 1em 0;
+    padding: 0.4em 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1;
+}
+
+.multi-select-menu input {
+    margin-right: 0.3em;
+    vertical-align: 0.1em;
+}
+
+.multi-select-button {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: -0.5em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: default;
+    width: 94.3%;
+    font-size: 13px;
+    padding-left: 15px;
+}
+
+.multi-select-button:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.4em 0.4em 0 0.4em;
+    border-color: #999 transparent transparent transparent;
+    float: right;
+    margin-top: 14px;
+}
+
+.multi-select-container--open .multi-select-menu {
+    display: block;
+}
+
+.multi-select-container--open .multi-select-button:after {
+    border-width: 0 0.4em 0.4em 0.4em;
+    border-color: transparent transparent #999 transparent;
+}
+
+.multi-select-menuitem {
+    width: 100%;
+}
+
+.getfly-form {
+    max-width: 450px !important;
+    margin: 0 auto;
+    padding: 25px !important;
+    font-size: 14px;
+    line-height: 25px;
+    color: #777;
+    border: none;
+    font-family: sans-serif;
+    background: transparent;
+}
+
+.getfly-input {
+    width: 95% !important;
+    background: #FFF;
+    padding: 10px;
+    outline: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-bottom: 10px !important;
+}
+
+.getfly-select {
+    width: 100% !important;
+    border: 1px solid #CCC;
+    background: #FFF;
+    padding: 10px 0px 10px 10px;
+    outline: 0;
+    font-weight: 500;
+    margin-bottom: 10px !important;
+}
+
+.getfly-textarea {
+    width: 97.5% !important;
+    border: 1px solid #CCC;
+    background: #FFF;
+    padding: 10px 5px;
+    outline: 0;
+    height: 50px;
+    font-family: Arial;
+    margin-bottom: 10px !important;
+}
+
+.getfly-button {
+    cursor: pointer;
+    border: none;
+    background: #f58632;
+    color: #FFF;
+    padding: 10px 20px;
+    font-size: 18px;
+    outline: 0;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+.getfly-span {
+    color: #f58632;
+    font-size: 20px;
+    font-weight: bold;
+    float: none !important;
+}
+
+.getfly-label {
+    display: none;
+}
+
+.getfly-mt10 {
+    margin-top: 10px;
+}
+
+.getfly-label-c {
+    color: #777 !important;
+}
+
+.getfly-span-c {
+    color: #f58632 !important;
+}
+
+.getfly-button-bg {
+    background: #f2420d;
+}
+
+.getfly-form input, select, textarea, .multi-select-button {
+    border: 1px solid #ccc !important;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.getfly-btn {
+    text-align: center;
+    margin-top: 3px;
+}
+
+.multi-select-container {
+    margin-bottom: 10px !important;
+}
+
+.getfly-row {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 480px) {
+    .getfly-input {
+        width: 93% !important;
+    }
+
+    .getfly-textarea {
+        width: 96% !important;
+    }
+}
+
+.getfly-margin {
+    margin: 5px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox.getfly-select {
+    padding: 4px 0px 4px 0px !important;
+    width: calc(100% - 2px) !important;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+    width: calc(100% - 2px);
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    background: #fff;
+    z-index: 1;
+}
+
+.checkboxes label {
+    display: block;
+}
+
+.checkboxes label:hover {
+    background-color: #1e90ff;
+}
